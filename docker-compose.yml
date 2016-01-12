@@ -1,0 +1,9 @@
+# vi: set ft=yaml ts=2 sw=2 expandtab:
+---
+jmeter-server:
+  image: nickball/jmeter-remote:2.13
+  hostname: jmeter
+  restart: always
+  volumes_from: []
+  ports:
+    - "0.0.0.0:20022:22"
